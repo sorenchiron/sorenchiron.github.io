@@ -9,6 +9,20 @@ But we should agree that I'm not held liable for anything.
 
 If my work is helpful, please acknowledge my authorship for the code I wrote.
 
+## CentOS7 with nvidia, vnc, cuda8, cudnn5, matlab16b, tensorflow...
+
+An article by me introducing how to assemble and maintain an Xeon+GTX1080 Computer shared to a group of idiots.
+
+Yes, with nvidia, ftpserver, vnc, xrdp, printer, cuda8, cudnn5, matlab16b, tensorflow...
+
+Didn't it drive me crazy? 
+
+In case you are concerned,
+
+Of course it did.
+
+[Just look at the sh\*t](http://blog.csdn.net/u010469993/article/details/57958762)
+
 ## Writing A Simple OS on i386
 
 This is a simple operating system demo for i386cpu created from scratch.
@@ -25,6 +39,10 @@ We finished it and think it's fun.
 
 [Docs Text & Full Code](http://blog.csdn.net/u010469993/article/details/17350747)
 
+## On Linux Process Status
+
+[Full Article](http://blog.csdn.net/u010469993/article/details/17061517)
+
 ## Vigenere Cipher Quick Tools
 
 Three Components Included:
@@ -32,7 +50,7 @@ Three Components Included:
 2. Vigenere Cipher Decoder
 3. Vigenere Cipher Cracker
 
-[Code](https://github.com/sorenchiron/VigenereCipher)
+[Full Code](https://github.com/sorenchiron/VigenereCipher)
 
 ## Source Generator
 
