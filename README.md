@@ -1,16 +1,16 @@
-# 欢迎您走错了来到这儿
-# 这是我的技术分享页面
+# **ERROR 404**
+# 您请求的页面不存在
 
+逗你的
 
+欢迎来看博客
 
 > This site is the index of several of my deprecated projects.
-
 > Take whatever you need. 
-
 > But we should agree that I'm not held liable for anything.
-
 > If my work is helpful, please acknowledge my authorship for the code I wrote.
 
+Blog Articles
 -------------------
 
 ## Radar Targets Filter For Air-Denfenses
