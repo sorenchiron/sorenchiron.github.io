@@ -1,5 +1,5 @@
-# € $ ￥
-# Wellcome to a strange site
+# €$￥欢迎您走错了来到这儿
+# 这是我的技术分享页面
 
 This site is the index of several of my deprecated projects.
 
@@ -8,6 +8,12 @@ Take whatever you need.
 But we should agree that I'm not held liable for anything.
 
 If my work is helpful, please acknowledge my authorship for the code I wrote.
+
+## Radar Targets Filter For Air-Denfenses
+
+This is an algorithm for filtering noise targets captured by air-defense radar system.
+
+[Code](https://github.com/sorenchiron/RadarFilter)
 
 ## CentOS7 with nvidia, vnc, cuda8, cudnn5, matlab16b, tensorflow...
 
