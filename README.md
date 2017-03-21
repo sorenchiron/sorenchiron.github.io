@@ -2,9 +2,9 @@
 # 您请求的页面不存在
 
 逗你的
-
 欢迎来看博客
 
+**注意事项**
 > This site is the index of several of my deprecated projects.
 > Take whatever you need. 
 > But we should agree that I'm not held liable for anything.
