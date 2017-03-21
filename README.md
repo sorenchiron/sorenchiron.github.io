@@ -1,13 +1,17 @@
-# €$￥欢迎您走错了来到这儿
+# 欢迎您走错了来到这儿
 # 这是我的技术分享页面
 
-This site is the index of several of my deprecated projects.
 
-Take whatever you need. 
 
-But we should agree that I'm not held liable for anything.
+> This site is the index of several of my deprecated projects.
 
-If my work is helpful, please acknowledge my authorship for the code I wrote.
+> Take whatever you need. 
+
+> But we should agree that I'm not held liable for anything.
+
+> If my work is helpful, please acknowledge my authorship for the code I wrote.
+
+-------------------
 
 ## Radar Targets Filter For Air-Denfenses
 
@@ -92,8 +96,8 @@ Do not tarry long.
 
 Best,
 
-CHEN
+€$￥
 
-[See](./passage1.md)
+[Boring Link](./passage1.md)
 
 ### contact me at sychen@zju.edu.cn
