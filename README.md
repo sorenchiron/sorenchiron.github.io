@@ -1,10 +1,7 @@
-# **ERROR 404**
-# 您请求的页面不存在
+# Welcome to my homepage
+## Personal webpage of 陈思宇 CHEN Siyu
 
-逗你的
-欢迎来看博客
-
-**注意事项**
+**Notice/注意事项**
 > This site is the index of several of my deprecated projects.
 > Take whatever you need. 
 > But we should agree that I'm not held liable for anything.
