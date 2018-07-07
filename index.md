@@ -1,7 +1,7 @@
 # Welcome to my homepage
-## Personal webpage of 陈思宇 CHEN Siyu
+## Personal webpage of S.Y. CHEN
 
-**Notice/注意事项**
+**Notice**
 > This site is the index of several of my deprecated projects.
 > Take whatever you need. 
 > But we should agree that I'm not held liable for anything.
