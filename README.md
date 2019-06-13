@@ -1,100 +1,59 @@
-# Welcome to my homepage
-## Personal webpage of 陈思宇 CHEN Siyu
+# 介绍
 
-**Notice/注意事项**
-> This site is the index of several of my deprecated projects.
-> Take whatever you need. 
-> But we should agree that I'm not held liable for anything.
-> If my work is helpful, please acknowledge my authorship for the code I wrote.
+一款 jekyll 主题（[GitHub 地址](https://github.com/TMaize/tmaize-blog)），简洁纯净，支持自适应，未引入任何框架，秒开页面
 
-# Blog Articles
-=====================================================
+下面有具体的样式截图，或者你可以到[TMaize Blog](http://blog.tmaize.net/)查看运行效果
 
-## Radar Targets Filter For Air-Denfenses
+# 注意
 
-This is an algorithm for filtering noise targets captured by air-defense radar system.
+1. 如果使用自己的域名，`/CNAME`文件里的内容请换成你自己的域名，然后 CNAME 解析到`用户名.github.com`
 
-[Code](https://github.com/sorenchiron/RadarFilter)
+2. 如果使用 GitHub 的的域名，请删除`/CNAME`文件,然后把你的项目修改为`用户名.github.io`
 
-## CentOS7 with nvidia, vnc, cuda8, cudnn5, matlab16b, tensorflow...
+3. 删除`/_include/script.html` 里面的,MTA 腾讯移动分析和百度的自动推送
 
-An article by me introducing how to assemble and maintain an Xeon+GTX1080 Computer shared to a group of idiots.
+4. 修改`/pages/about.md`中关于我的内容
 
-Yes, with nvidia, ftpserver, vnc, xrdp, printer, cuda8, cudnn5, matlab16b, tensorflow...
+5. 修改`/_data/links.json` 友情链接里的内容
 
-Didn't it drive me crazy? 
+6. 适当修改`/_config.yml` 文件，具体作用请参考注释
 
-In case you are concerned,
+7. 清空`/_posts`目录下文件和`/post`目录下文件
 
-Of course it did.
+8. 网站的 logo 放在了`/static/img/`下
 
-[Just look at the sh\*t](http://blog.csdn.net/u010469993/article/details/57958762)
+9. 最后，如果你把项目 fork 过去了，想要删除我的提交记录可以先软重置到第一个提交，然后再提交一次，最后强制推送一次就行了
 
-## Writing A Simple OS on i386
+# 使用
 
-This is a simple operating system demo for i386cpu created from scratch.
+文章放在`/_posts`目录，命名为`yyyy-MM-dd-xxxx-xxxx.md`，内容格式如下
 
-The original purpose of starting this project is to use it as final homework of ZJU-advanced-OS lessons.
+```
+---
+layout: mypost
+title: 标题
+categories: [分类1,分类2]
+---
 
-We finished it and think it's fun.
+文章内容，MD格式
+```
 
-[Full Code](https://github.com/sorenchiron/os)
+文章资源放在`/posts`目录，如文章标题是`2019-05-01-theme-user.md`，则该篇文章的资源放在`/posts/2019/05/01`下,在文章使用时直接引用即可
 
-[Docs Text](http://blog.csdn.net/u010469993/article/details/64126587)
+```
+![这是图片](xxx.png)
 
-## Linux Keyboard IO Walk-Through
+[xxx.zip下载](xxx.zip)
+```
 
-[Docs Text & Full Code](http://blog.csdn.net/u010469993/article/details/17350747)
+# 移动端截图
 
-## On Linux Process Status
+![mobile](static/readme/mobile.jpg)
 
-[Full Article](http://blog.csdn.net/u010469993/article/details/17061517)
+# PC 端截图
 
-## Vigenere Cipher Quick Tools
+![pc](static/readme/pc.jpg)
 
-Three Components Included:
-1. Vigenere Cipher Encoder
-2. Vigenere Cipher Decoder
-3. Vigenere Cipher Cracker
-
-[Full Code](https://github.com/sorenchiron/VigenereCipher)
-
-## Source Generator
-
-This is a template generator that can manage inheritance of necessary redundancy in your code/document/anyotherText
-
-In English, a easy-to-use dependency manager, which can save you lots of effort when doing text-work.
-
-[Full Code & Doc](https://github.com/sorenchiron/SourceGenerator)
-
-
-## SqlAnalyst
-
-This program can analyze a bunch of sql files and tell the relations/job-tree of the sqls.
-
-I personally had been using it for a year when I was working on datamining (A pile of SQL works). 
-
-It's really convenient. 
-
-[Full Code & Doc](https://github.com/sorenchiron/SqlAnalyst)
-
-
-# More?
-
-This page is not  under frequent maintainance now.
-
-I will add some content soon.
-
-There is a big fantastic world outside here.
-
-So I suggest you go out and see it.
-
-Do not tarry long. 
-
-Best,
-
-€$￥
-
-[Boring Link](./passage1.md)
-
-### contact me at sychen@zju.edu.cn
+# 致谢
+本站点基于 TMaize 贡献的博客模板修改发布。
+感谢作者 https://github.com/TMaize 的开源贡献。

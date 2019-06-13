@@ -1,1 +1,38 @@
-theme: jekyll-theme-tactile
+encoding: utf-8
+
+# SEO相关信息
+title: 极光城
+description: SYC的个人博客
+keywords: TMaize,Blog,Java,Html,JavaScript
+author: TMaize
+footerText: 'Copyright © 2019'
+
+# 域名配置,生成sitemap会用到，友链也会用到
+domainUrl: 'http://sorenchiron.github.io'
+# 路径配置，静态资源404一般是这里不对
+# 直接域名访问设置为'',有如果是user.github.io/blog/访问的话设置为'/blog'
+baseUrl: ''
+
+# 菜单
+menu:
+  - title: Home
+    url: /
+  - title: Categories
+    url: /pages/categories.html
+  - title: Search
+    url: /pages/search.html
+  - title: Links
+    url: /pages/links.html
+  - title: Chat
+    url: /pages/chat.html
+  - title: About
+    url: /pages/about.html
+
+# 文章url前缀，固定格式，不要动
+permalink: /posts/:year/:month/:day/:title.html
+
+kramdown:
+  auto_ids: true
+  input: GFM
+
+exclude: ['CNAME', 'README.md', 'build-tool']
