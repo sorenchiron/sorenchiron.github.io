@@ -4,12 +4,33 @@ isPage: true
 title: 关于我
 ---
 
-> Hello 陌生人，欢迎访问
+> Hello 欢迎访问
 
 # Biography
 
 Siyu Chen received the bachelor's degree from Harbin Institute of Technology in 2016.
 He is currently working towards the Master degree in the Department of Computer Science and Technology, Zhejiang University. His research interests include statistical machine learning, pattern recognition, and computer vision.
+
+
+# Projects
+
+###### YAnimoji (Yet Another Animoji) Facial Performance Transfer
+
+Siyu Chen [Technical manual]({{site.baseUrl}}/static/files/YAnimoji.pdf)
+
+![]({{site.baseUrl}}/static/img/animoji.gif)
+
+###### YAID: (Yet Another FaceID) Face Identity Verification
+
+Siyu Chen, Jingzhou Chen, Qian Zhong, Yingyu Diao, Minchao Ye
+
+![]({{site.baseUrl}}/static/img/faceid.gif)
+
+###### Game Material Super Resolution Based on Generative Adversarial Network
+
+Danping Liao, Siyu Chen
+
+![]({{site.baseUrl}}/static/img/srgan.gif)
 
 # Publications
 
