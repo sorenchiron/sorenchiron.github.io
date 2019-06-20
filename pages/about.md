@@ -16,7 +16,7 @@ He is currently working towards the Master degree in the Department of Computer 
 
 ###### YAnimoji (Yet Another Animoji) Facial Performance Transfer
 
-Siyu Chen [Technical manual]({{site.baseUrl}}/static/files/YAnimoji.pdf)
+Siyu Chen, Danping Liao [Technical manual]({{site.baseUrl}}/static/files/YAnimoji.pdf)
 
 ![]({{site.baseUrl}}/static/img/animoji.gif)
 
