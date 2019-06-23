@@ -87,3 +87,8 @@ Danping Liao, Siyu Chen, Yuntao Qian [IEEE](https://ieeexplore.ieee.org/document
 
 欢迎 **Star** 和 **Fork**
 欢迎**添加友链**，在[留言板](chat.html)留言即可，我会第一时间处理。
+
+
+## Credits
+
+Besides the theme provided by TMAIZE, this website is powered by [Jekyll](https://www.jekyll.com.cn/docs/pages/). 
