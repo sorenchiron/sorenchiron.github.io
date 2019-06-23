@@ -46,13 +46,16 @@ categories: [分类1,分类2]
 [xxx.zip下载](xxx.zip)
 ```
 
-# 移动端截图
 
-![mobile](static/readme/mobile.jpg)
+# Github Custom DNS A-records:
 
-# PC 端截图
+[ANAME IP Address](https://help.github.com/en/articles/setting-up-an-apex-domain)
 
-![pc](static/readme/pc.jpg)
+[Help List](https://help.github.com/en/articles/using-a-custom-domain-with-github-pages)
+
+[zhihu.com](https://zhuanlan.zhihu.com/p/56423186)
+
+[StackOvervlow](https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages)
 
 # 致谢
 本站点基于 TMaize 贡献的博客模板修改发布。
