@@ -1,10 +1,10 @@
 ---
 layout: mypost
 title: MACOSX苹果电脑如何读写NTFS文件系统的U盘或移动硬盘
-categories: [文章]
+categories: [小技巧]
 published: true
 date: 2019-06-19
-tags: [文章]
+tags: [mac,ntfs]
 ---
 
 
