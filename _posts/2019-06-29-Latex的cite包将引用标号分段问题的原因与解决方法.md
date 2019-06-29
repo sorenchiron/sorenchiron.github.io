@@ -1,7 +1,7 @@
 ---
 layout: mypost
 title: Latex的cite包将引用标号分段问题的原因与解决方法
-categories: [小技巧]
+categories: [小技巧,latex]
 published: true
 date: 2019-06-29
 tags: [文章,latex,cite]
