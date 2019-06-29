@@ -13,8 +13,8 @@ parser = argparse.ArgumentParser('Manager of YAML blog')
 parser.add_argument('operation',type=str,help='add,rm')
 parser.add_argument('name',type=str,help='name of the blog')
 parser.add_argument('date',nargs='?',type=str,default=None,help='format: YYYYMMDD')
-parser.add_argument('--dry',action='store_true',default=False,help='do everthing except actuall system calls')
-parser.add_argument('--open',action='store_true',default=False,help='open the text markdown after creation')
+parser.add_argument('-d','--dry',action='store_true',default=False,help='do everthing except actuall system calls')
+parser.add_argument('-o','--open',action='store_true',default=False,help='open the text markdown after creation')
 
 args = parser.parse_args()
 
