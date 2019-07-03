@@ -46,9 +46,9 @@ Zhijian Luo, Siyu Chen, Yuntao Qian
 
 ![]({{site.baseUrl}}/static/img/SDAMM.png)
 
-###### Deep Neural Network Based Hyperspectral Pixel Classification with Factorized Spectral-Spatial Feature Representation IEEE-ACCESS
+###### Deep Neural Network Based Hyperspectral Pixel Classification with Factorized Spectral-Spatial Feature Representation IEEE-ACCESS 2019
 
-Jingzhou Chen, Siyu Chen, Peilin Zhou, Yuntao Qian [arXiv](https://arxiv.org/abs/1904.07461) [github](https://github.com/MonsterZhZh/FSSF-Net-for-HSI-Classification)
+Jingzhou Chen, Siyu Chen, Peilin Zhou, Yuntao Qian [IEEE](https://ieeexplore.ieee.org/document/8740867?source=authoralert) [arXiv](https://arxiv.org/abs/1904.07461) [github](https://github.com/MonsterZhZh/FSSF-Net-for-HSI-Classification)
 
 ![]({{site.baseUrl}}/static/img/hsi_classification.gif)
 
