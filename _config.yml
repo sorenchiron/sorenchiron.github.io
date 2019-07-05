@@ -8,7 +8,7 @@ author: TMaize
 footerText: 'Copyright © 2019'
 
 # 域名配置,生成sitemap会用到，友链也会用到
-domainUrl: 'http://sorenchiron.github.io'
+domainUrl: 'https://sorenchiron.github.io'
 # 路径配置，静态资源404一般是这里不对
 # 直接域名访问设置为'',有如果是user.github.io/blog/访问的话设置为'/blog'
 baseUrl: ''
