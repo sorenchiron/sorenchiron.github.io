@@ -1,7 +1,7 @@
 ---
 layout: mypost
 isPage: true
-title: 关于我
+title: 关于我 About Me
 ---
 
 > Hello 欢迎访问
