@@ -4,7 +4,7 @@ isPage: true
 title: 关于我 About Me
 ---
 
-> Hello 欢迎访问
+![]({{site.baseUrl}}/static/img/me.jpg)
 
 # Biography
 
@@ -78,7 +78,8 @@ Danping Liao, Siyu Chen, Yuntao Qian [IEEE](https://ieeexplore.ieee.org/document
 
 
 - Email : [QQ Mail](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=0Ofg5uXj4eXn4pChof6zv70)
-<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=0Ofg5uXj4eXn4pChof6zv70" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png"/></a>
+
+<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=0Ofg5uXj4eXn4pChof6zv70" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png" align="left"/></a>
 
 - GitHub : [https://github.com/sorenchiron](https://github.com/sorenchiron)
 
@@ -86,9 +87,11 @@ Danping Liao, Siyu Chen, Yuntao Qian [IEEE](https://ieeexplore.ieee.org/document
 ## Friendly Interactions Welcomed
 
 欢迎 **Star** 和 **Fork**
-欢迎**添加友链**，在[留言板](chat.html)留言即可，我会第一时间处理。
+欢迎 **添加友链**，请在[留言板](chat.html)留言即可。
 
 
 ## Credits
 
-Besides the theme provided by TMAIZE, this website is powered by [Jekyll](https://www.jekyll.com.cn/docs/pages/). 
+Some image processing is done using [ImageMagick](https://imagemagick.org/script/command-line-options.php)
+
+Besides the theme is provided by TMAIZE, and this website is powered by [Jekyll](https://www.jekyll.com.cn/docs/pages/). 
