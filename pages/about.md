@@ -8,8 +8,7 @@ title: 关于我 About Me
 
 # Biography
 
-Siyu Chen received the bachelor's degree from Harbin Institute of Technology in 2016.
-He is currently working towards the Master degree in the Department of Computer Science and Technology, Zhejiang University. His research interests include statistical machine learning, pattern recognition, and computer vision.
+Siyu Chen received the Master's degree from the Department of Computer Science and Technology, Zhejiang University in 2019, and bachelor's degree from the Department of Software Engineering, Harbin Institute of Technology in 2016. He is currently working as an algorithm researcher in Alibaba Group, focused on audio/speech enhancement. His research interests include statistical machine learning, pattern recognition, and computer vision.
 
 
 # Projects
@@ -40,7 +39,7 @@ Siyu Chen †, Zhijian Luo †, Yuntao Qian [world scientific](https://www.world
 
 ![]({{site.baseUrl}}/static/img/trees.gif)
 
-###### Stochastic Momentum Method with Double Acceleration for Large-scale Empirical Risk Minimization (working on)
+###### Stochastic Momentum Method with Double Acceleration for Regularized Empirical Risk Minimization IEEE-ACCESS 2019
 
 Zhijian Luo, Siyu Chen, Yuntao Qian
 
