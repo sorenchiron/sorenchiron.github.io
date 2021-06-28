@@ -33,6 +33,9 @@ Danping Liao, Siyu Chen
 
 # Publications
 
+###### Multi-stage Stochastic Gradient Method with Momentum Acceleration Signal Processing 2021
+Zhijian Luo, Siyu Chen, Yuntao Qian, Yueen Hou [Elsevier-Science Direct](https://www.sciencedirect.com/science/article/abs/pii/S0165168421002395)
+
 ###### Learning Deep Optimizer for Blind Image Deconvolution IJWMIP 2019
 
 Siyu Chen †, Zhijian Luo †, Yuntao Qian [world scientific](https://www.worldscientific.com/doi/abs/10.1142/S0219691319500449) [arXiv](https://arxiv.org/abs/1904.07516) [github](https://github.com/sorenchiron/deblur)
