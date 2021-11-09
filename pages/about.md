@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 layout: mypost
 isPage: true
@@ -193,5 +192,4 @@ Danping Liao, Siyu Chen, Yuntao Qian [IEEE](https://ieeexplore.ieee.org/document
 
 Some image processing is done using [ImageMagick](https://imagemagick.org/script/command-line-options.php)
 
->>>>>>> 59d9e9f3081f00a658e73aea303386afde698041
 Besides the theme is provided by TMAIZE, and this website is powered by [Jekyll](https://www.jekyll.com.cn/docs/pages/). 
