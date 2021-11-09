@@ -46,6 +46,13 @@ categories: [分类1,分类2]
 [xxx.zip下载](xxx.zip)
 ```
 
+# jekyll commands
+
+```bash
+jekyll clean
+jekyll build
+jekyll serve
+```
 
 # Github Custom DNS A-records:
 
