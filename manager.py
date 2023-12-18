@@ -6,7 +6,7 @@ import os
 import argparse
 import time
 import re
-import torchfun as tf
+import utils
 import shutil
 
 parser = argparse.ArgumentParser('Manager of YAML blog')
@@ -29,9 +29,8 @@ args.name = args.name.replace(' ','-')
 def log(*argv):
     print('--Log:',*argv)
 
-safe_open = tf.safe_open
-force_exist = tf.force_exist
-omini_open = tf.omini_open
+force_exist = utils.force_exist
+omini_open = utils.omini_open
 
 def touch(fpath,date=NOW_FORMATTED):
     log('creating text file',fpath)
