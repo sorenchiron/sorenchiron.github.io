@@ -34,7 +34,7 @@ tags: [文章]
 含义如下：
 ```json
 { "keys": ["ctrl+alt+left"], "command": "move_to", "args": {"to": "bol", "extend": true} }
-  "按键"：["ctrl+alt+右箭头"]，"执行动作":"移动光标"，"参数"：{"移到": "begin-of-line行首","同时延伸选区":"是"}
+  "按键"：["ctrl+alt+右箭头"],"执行动作":"移动光标","参数"：{"移到": "begin-of-line行首","同时延伸选区":"是"}
 ```
 
 # 一些常见的快捷键命令
