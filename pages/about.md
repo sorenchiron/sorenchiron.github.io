@@ -8,10 +8,29 @@ title: 关于我 About Me
 
 # Biography
 
-Siyu Chen received the Master's degree from the Department of Computer Science and Technology, Zhejiang University in 2019, and bachelor's degree from the Department of Software Engineering, Harbin Institute of Technology in 2016. He is currently working as an algorithm researcher in Alibaba Group, focused on audio/speech enhancement. His research interests include statistical machine learning, pattern recognition, and computer vision.
+Research areas, interests and keywords: statistical machine learning, signal processing, pattern recognition, computer vision, data-science, artifical intelligence.
 
+Siyu Chen received the Master's degree from the Department of Computer Science and Technology, Zhejiang University in 2019, and bachelor's degree from the Department of Software Engineering, Harbin Institute of Technology in 2016. 
 
-# Projects
+In 2023, motivated by the prospect that AI will inevitably be encorporated as part of the civillization, he founded Ultrawave Inc. (Ultrawave Technology), the first AI infrastructure exchange platform, allowing every human to manipulate AI like part of one's physical body, to utilize and profit from AI distributedly as well as collectively.
+During 2019-2022, he worked as algorithm researcher in Alibaba Group, focused on enhancement of audio/speech and visual signals.
+During 2017-2018, he worked in Netease Inc. leading the research of cutting-edge AI technologies for game application.
+Among 2015-2016, he worked in Tencent Inc. specializing in data science technologies and their application in large-scale business decisions.
+
+# Researches
+
+###### InstantVAD
+InstantVAD is a extremely light-weight VAD (Voice Activity Detection) algorithm that out-performs Opus and RTC vad algorithm by nearly 20% with much less or equal computational cost. The well designed and pruned InstantVAD model is only 100~300KB in size while having 95% accuracy and 0.96% F1-score. A innovative neural network streaming technique is proposed and utilized in InstantVAD, allowing very low realtime detection latency down to 1ms.
+
+other research initiated and implemented: 
+- video artifact removal
+- image enhancement 
+- visual quality enhancement
+- video/music classification
+- video auto-accompaniment
+
+###### AliDenoise
+Speech enhancement for online hosted video streaming. The technique achieves state of the art PSNR, PESQ, STOI and excellent subjective evaluations. This technology adapts to a large variation of devices from servers to enduser phones, and is currently serving most of Alibaba's multi-media transactions.
 
 ###### YAnimoji (Yet Another Animoji) Facial Performance Transfer
 
