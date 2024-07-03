@@ -13,14 +13,17 @@ Research areas, interests and keywords: statistical machine learning, signal pro
 Siyu Chen received the Master's degree from the Department of Computer Science and Technology, Zhejiang University in 2019, and bachelor's degree from the Department of Software Engineering, Harbin Institute of Technology in 2016. 
 
 In 2023, motivated by the prospect that AI will inevitably be encorporated as part of the civillization, he founded Ultrawave Inc. (Ultrawave Technology), the first AI infrastructure exchange platform, allowing every human to manipulate AI like part of one's physical body, to utilize and profit from AI distributedly as well as collectively.
+
 During 2019-2022, he worked as algorithm researcher in Alibaba Group, focused on enhancement of audio/speech and visual signals.
+
 During 2017-2018, he worked in Netease Inc. leading the research of cutting-edge AI technologies for game application.
+
 Among 2015-2016, he worked in Tencent Inc. specializing in data science technologies and their application in large-scale business decisions.
 
 # Researches
 
 ###### NATS: AI aided speech synthesis from neural activity recordings
-This research is forcused on re-harnessing speech capability for patients with neurological dysfunctions and celebral lesions. Cooperative insititution [Westlake University](https://www.westlake.edu.cn/).
+This research is forcused on re-harnessing speech capability for patients with neurological dysfunctions and celebral lesions. Cooperative insititution: [Westlake University](https://www.westlake.edu.cn/).
 
 ###### AliVAD
 AliVAD is a extremely light-weight VAD (Voice Activity Detection) algorithm that out-performs Opus and RTC vad algorithm by nearly 20% with much less or equal computational cost. The well designed and pruned AliVAD model is only 100~300KB in size while having 95% accuracy and 0.96% F1-score. A innovative neural network streaming technique is proposed and utilized in AliVAD, allowing very low realtime detection latency down to 1ms.
