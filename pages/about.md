@@ -10,13 +10,18 @@ title: 关于我 About Me
 
 Research areas, interests and keywords: statistical machine learning, signal processing, pattern recognition, computer vision, data-science, artifical intelligence.
 
-Siyu Chen received the Master's degree from the Department of Computer Science and Technology, Zhejiang University in 2019, and bachelor's degree from the Department of Software Engineering, Harbin Institute of Technology in 2016. 
+
+Siyu Chen received bachelor's degree from the Department of Software Engineering, Harbin Institute of Technology in 2016, and Master's degree from the Department of Computer Science and Technology, Zhejiang University in 2019. 
+
 
 In 2023, motivated by the prospect that AI will inevitably be encorporated as part of the civillization, he founded Ultrawave Inc. (Ultrawave Technology), the first AI infrastructure exchange platform, allowing every human to manipulate AI like part of one's physical body, to utilize and profit from AI distributedly as well as collectively.
 
+
 During 2019-2022, he worked as algorithm researcher in Alibaba Group, focused on enhancement of audio/speech and visual signals.
 
+
 During 2017-2018, he worked in Netease Inc. leading the research of cutting-edge AI technologies for game application.
+
 
 Among 2015-2016, he worked in Tencent Inc. specializing in data science technologies and their application in large-scale business decisions.
 
