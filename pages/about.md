@@ -19,8 +19,11 @@ Among 2015-2016, he worked in Tencent Inc. specializing in data science technolo
 
 # Researches
 
-###### InstantVAD
-InstantVAD is a extremely light-weight VAD (Voice Activity Detection) algorithm that out-performs Opus and RTC vad algorithm by nearly 20% with much less or equal computational cost. The well designed and pruned InstantVAD model is only 100~300KB in size while having 95% accuracy and 0.96% F1-score. A innovative neural network streaming technique is proposed and utilized in InstantVAD, allowing very low realtime detection latency down to 1ms.
+###### NATS: AI aided speech synthesis from neural activity recordings
+This research is forcused on re-harnessing speech capability for patients with neurological dysfunctions and celebral lesions. Cooperative insititution [Westlake University](https://www.westlake.edu.cn/).
+
+###### AliVAD
+AliVAD is a extremely light-weight VAD (Voice Activity Detection) algorithm that out-performs Opus and RTC vad algorithm by nearly 20% with much less or equal computational cost. The well designed and pruned AliVAD model is only 100~300KB in size while having 95% accuracy and 0.96% F1-score. A innovative neural network streaming technique is proposed and utilized in AliVAD, allowing very low realtime detection latency down to 1ms.
 
 other research initiated and implemented: 
 - video artifact removal
