@@ -34,5 +34,6 @@ permalink: /posts/:year/:month/:day/:title.html
 kramdown:
   auto_ids: true
   input: GFM
+  math_engine: MathJax
 
 exclude: ['CNAME', 'README.md', 'build-tool']
