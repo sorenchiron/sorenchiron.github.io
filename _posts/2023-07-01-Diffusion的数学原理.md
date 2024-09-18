@@ -25,12 +25,12 @@ tags: [文章]
     - $KL(p,q) = \sum_{x \in X}{p(x)\log{\frac{p(x)}{q(x)}} }$
     - $KL \in [0,+\infty)$
 - Prior: $p(x)$ a total probability of a variable. The measured variable is ususally a latent factor influencing our desired observables. Also, prior is a kind of marginal probability on a specific margin.
-- Posterior: $p(Z=z\|x)$ conditional probability given a specific prerequisite. e.g. $p(Class=cat|image)$.
-- Likelihood function: $\mathcal{L}(\theta,x) = p(\theta|x)$ aims to measure the possibility of model parameters to fit the observed data $x$
-- Baye's theorem:$P(A|B)=\frac{P(B|A)P(A)}{P(B)}$
+- Posterior: $p(Z=z\|x)$ conditional probability given a specific prerequisite. e.g. $p(Class=cat\|image)$.
+- Likelihood function: $\mathcal{L}(\theta,x) = p(\theta\|x)$ aims to measure the possibility of model parameters to fit the observed data $x$
+- Baye's theorem:$P(A\|B)=\frac{P(B\|A)P(A)}{P(B)}$
     - $P(A,B)=P(A,B)$
-    - $P(A|B)P(B)=P(B|A)P(A)$
-    - $P(A|B)=\frac{P(B|A)P(A)}{P(B)}$
+    - $P(A\|B)P(B)=P(B\|A)P(A)$
+    - $P(A\|B)=\frac{P(B\|A)P(A)}{P(B)}$
 - Jensen's inequality: $f(\mathbb{E}(X)) \geq \mathbb{E}f(X)$
 - Varational lower-bound:$\mathbb{E}[\log p(X,Z)] + H(Z)$
     
@@ -46,9 +46,9 @@ tags: [文章]
     $$
     maximization of $\log{p(X)}$ can now become ELBO target $L$.
 
-    another aspect is to define $p(X)$ as a image generation process. Further introducing latent class variable $C$ creates classification model $p(C|X)$. Also, introducing latent feature variable $Z$ creates feature encoding distribution $p(Z|X)$. Here we will use feature variable $Z$ as an example.
+    another aspect is to define $p(X)$ as a image generation process. Further introducing latent class variable $C$ creates classification model $p(C\|X)$. Also, introducing latent feature variable $Z$ creates feature encoding distribution $p(Z\|X)$. Here we will use feature variable $Z$ as an example.
 
-    To create a trained approximator $q(Z)$ to fit the underlying real $p(Z|X)$, KL divergence metric can be used:
+    To create a trained approximator $q(Z)$ to fit the underlying real $p(Z\|X)$, KL divergence metric can be used:
 
     $$
     \begin{align}
