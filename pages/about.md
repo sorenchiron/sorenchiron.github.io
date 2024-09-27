@@ -84,6 +84,11 @@ Jingzhou Chen, Siyu Chen, Peilin Zhou, Yuntao Qian [IEEE](https://ieeexplore.iee
 
 ![]({{site.baseUrl}}/static/img/hsi_classification.gif)
 
+	
+###### A Deep Optimization Approach for Image Deconvolution. CoRR abs/1904.07516 (2019)
+
+Zhijian Luo, Siyu Chen, Yuntao Qian
+
 ###### Lane marking detection using convolutional neural network Signal Processing 2019 Best paper
 
 利用卷积神经网络的车道线检测方法 信号处理-2019 优秀论文

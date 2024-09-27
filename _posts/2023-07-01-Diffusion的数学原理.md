@@ -48,6 +48,8 @@ tags: [文章]
 
     another aspect is to define $p(X)$ as a image generation process. Further introducing latent class variable $C$ creates classification model $p(C\|X)$. Also, introducing latent feature variable $Z$ creates feature encoding distribution $p(Z\|X)$. Here we will use feature variable $Z$ as an example.
 
+    given a image generation function $f_\theta$ parameterized by $\theta \in \mathbb{Q}^M$, meaning $\theta$ may be a set of $M$ parameters.
+
     To create a trained approximator $q(Z)$ to fit the underlying real $p(Z\|X)$, KL divergence metric can be used:
 
     $$
