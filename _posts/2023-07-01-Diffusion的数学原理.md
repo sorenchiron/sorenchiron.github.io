@@ -14,24 +14,24 @@ tags: [文章]
 - Observable: is a random variable in contrast to latent variable.
 - Latent (variable): a variable $Z$ related to some observables, but cannot be directly measured.
 - Random variable: a random variable $X$ is a set, and is a function: [Outcome](https://en.wikipedia.org/wiki/Outcome_(probability))->Mesurement, aka. $X:\Omega \rightarrow E$. Measurement values $x\in E$ is a numerical representation of a outcome or outcomes aka. sample-space. A single sample $x$ can be drawn from the **range** of random variable $x\in X$ or $x \in E$.
-- Distirbution: $p$ is a function standing for the real distribution, and $q$ can represent an approximation function of the real distribution. $p(X=x)$ or $p(X)$ is a scalar while $p(X),X=\\{x_1,x_2,...,x_n\\}$ is a set describing the probablistic distribution of the entire sample space.
+- Distirbution: $p$ is a function standing for the real distribution, and $q$ can represent an approximation function of the real distribution. $p(X=x)$ or $p(X)$ is a scalar while $p(X),X=\{x_1,x_2,...,x_n\}$ is a set describing the probablistic distribution of the entire sample space.
 - Entropy:
     - Gibbs entropy formula: $S = - k_B \sum_{i} (p_i \ln{p_i})$ in which $k_B$ is the Boltzmann's constant representing the proportionality related to the average relative thermal energy. 
     - Shannon's entropy (information entropy): $H(X) = - \sum_{x \in X}{\left(p(x) \log{p(x)} \right)}$, $H \in [0,\infty)$. In this context, $H$ represents *Heat*.
 - Cross entropy: $H(p,q) = - \sum_{x \in X}{p(x)\log{q(x)}}$, $H$ achieves minimum when distribution $p=q$, thus $\min{H(p,q)} = H(p)$ which is the *Heat* or entropy of $p$.
     $$
     \begin{align}
-    H(p,q) &= - \sum_{x \in X}{p(x)\left( \log{p(x)} + (\log{q(x)} - \log{p(x)}) \right)} \\\\
-    &= - \sum_{x \in X}{p(x)\log{p(x)}} - \sum_{x \in X}{p(x)(\log{q(x)} - \log{p(x)})} \\\\
+    H(p,q) &= - \sum_{x \in X}{p(x)\left( \log{p(x)} + (\log{q(x)} - \log{p(x)}) \right)} \\
+    &= - \sum_{x \in X}{p(x)\log{p(x)}} - \sum_{x \in X}{p(x)(\log{q(x)} - \log{p(x)})} \\
     &= H(p) + D_{KL}(p,q)
     \end{align}
     $$
 - Kullback–Leibler (KL) divergence (relative entropy), is the latter part of cross-entropy:
     $$
     \begin{align}
-    KL(p,q) &= - \sum_{x \in X}{p(x)(\log{q(x)} - \log{p(x)})} \\\\
-    KL(p,q) &= \sum_{x \in X}{p(x)(\log{p(x)} - \log{q(x)})} \\\\
-    KL(p,q) &= \sum_{x \in X}{p(x)\log{\frac{p(x)}{q(x)}} } \\\\
+    KL(p,q) &= - \sum_{x \in X}{p(x)(\log{q(x)} - \log{p(x)})} \\
+    KL(p,q) &= \sum_{x \in X}{p(x)(\log{p(x)} - \log{q(x)})} \\
+    KL(p,q) &= \sum_{x \in X}{p(x)\log{\frac{p(x)}{q(x)}} } \\
     KL &\in [0,+\infty)
     \end{align}
     $$
@@ -40,8 +40,8 @@ tags: [文章]
 - Likelihood function: $\mathcal{L}(\theta,x) = p(\theta\|x)$ aims to measure the possibility of model parameters to fit the observed data $x$
 - Baye's theorem:$P(A\|B)=\frac{P(B\|A)P(A)}{P(B)}$
     $$\begin{align}
-    P(A,B) &= P(A,B) \\\\
-    P(A\|B)P(B) &= P(B\|A)P(A) \\\\
+    P(A,B) &= P(A,B) \\
+    P(A\|B)P(B) &= P(B\|A)P(A) \\
     P(A\|B) &= \frac{P(B\|A)P(A)}{P(B)}
     \end{align}$$
 - Jensen's inequality: $f(\mathbb{E}(X)) \geq \mathbb{E}f(X)$
@@ -50,10 +50,10 @@ tags: [文章]
     in which, $x$ can be the image data, $z$ can be the latent feature extracted from $x$, or can be the classification distribution (prob-vector) of $x$. 
     $$
     \begin{align}
-    \log{p(X)} &= \log{ \int_Z{p(X,Z)} } \\\\
-              &= \log{ \int_Z{p(X,Z)\frac{q(Z)}{q(Z)}} } \\\\
-              &= \log{\mathbb{E}_q \left[ \frac{p(X,Z)}{q(Z)} \right] } \\\\
-              &\geq \mathbb{E}_q \left[ \log{\frac{p(X,Z)}{q(Z)}}  \right] \\\\
+    \log{p(X)} &= \log{ \int_Z{p(X,Z)} } \\
+              &= \log{ \int_Z{p(X,Z)\frac{q(Z)}{q(Z)}} } \\
+              &= \log{\mathbb{E}_q \left[ \frac{p(X,Z)}{q(Z)} \right] } \\
+              &\geq \mathbb{E}_q \left[ \log{\frac{p(X,Z)}{q(Z)}}  \right] \\
               &= L = \mathbb{E}_q[\log p(X,Z)] + H(Z)
     \end{align}
     $$
@@ -64,7 +64,7 @@ tags: [文章]
 - Dirac Delta function
     $$
     \begin{align}
-    \delta(x) &= 0, \text{if } x\neq 0\\\\
+    \delta(x) &= 0, \text{if } x\neq 0\\
             \int^{+\infty}_{-\infty} \delta(x)  &= 1 
     \end{align}
     $$
@@ -135,10 +135,10 @@ The difficulty lies in:
 If we maximize for log likelihood, we get:
 
 $$\begin{align}
-\arg\max p(X) &= \arg\max \log{p(X)} \\\\
-\log{p(x)} &= \log \int{p(x,z)dz} \\\\
-           &= \log \int{\frac{p(x,z)q_{\Phi}(z\|x)}{q_{\Phi(z\|x)}}dz} \\\\
-           &= \log E_{q_\Phi(z\|x)} \left[ \frac{p(x,z)}{q_\Phi(z\|x)} \right] \\\\
+\arg\max p(X) &= \arg\max \log{p(X)} \\
+\log{p(x)} &= \log \int{p(x,z)dz} \\
+           &= \log \int{\frac{p(x,z)q_{\Phi}(z\|x)}{q_{\Phi(z\|x)}}dz} \\
+           &= \log E_{q_\Phi(z\|x)} \left[ \frac{p(x,z)}{q_\Phi(z\|x)} \right] \\
            &\geq E_{q_\Phi(z\|x)} \left[ \log \frac{p(x,z)}{q_{\Phi(z\|x)}} \right] \label{eq:elbo}
 \end{align}$$
 This latter form is ELBO.
@@ -151,13 +151,13 @@ To deduce in a closed form[^5]:
 
 $$
 \begin{align}
-\log{p(x)} &= \log{p(x)} \int{q_\Phi(z\|x)dz} \\\\
-&= \int{q_\Phi(z\|x)\log{p(x)}dz} \\\\
-&= E_{q_\Phi(z\|x)}\log p(x) \\\\
-&= E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{p(z\|x)} \right]\\\\
-&= E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)q_\Phi(z\|x)}{p(z\|x)q_\Phi(z\|x)} \right]\\\\
-&= E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] + E_{q_\Phi(z\|x)}\left[ \log \frac{q_\Phi(z\|x)}{p(z\|x)} \right]\\\\
-&= E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] + D_{KL}(q_\Phi(z\|x) \|\| p(z\|x)) \\\\
+\log{p(x)} &= \log{p(x)} \int{q_\Phi(z\|x)dz} \\
+&= \int{q_\Phi(z\|x)\log{p(x)}dz} \\
+&= E_{q_\Phi(z\|x)}\log p(x) \\
+&= E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{p(z\|x)} \right]\\
+&= E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)q_\Phi(z\|x)}{p(z\|x)q_\Phi(z\|x)} \right]\\
+&= E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] + E_{q_\Phi(z\|x)}\left[ \log \frac{q_\Phi(z\|x)}{p(z\|x)} \right]\\
+&= E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] + D_{KL}(q_\Phi(z\|x) \|\| p(z\|x)) \\
 &= ELBO + D_{KL}
 \end{align}
 $$
@@ -178,9 +178,9 @@ $D_{KL}(q_\Phi(z\|x) \|\| p(z\|x))$ term involves comparison with the true $p(z\
 For the ELBO term, 
 $$
 \begin{align}
-E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] &= E_{q_\Phi(z\|x)}\left[ \log \frac{p(x\|z)p(z)}{q_\Phi(z\|x)} \right] \\\\
-&= E_{q_\Phi(z\|x)}\left[ \log p(x\|z) \right] + E_{q_\Phi(z\|x)}\left[ \log \frac{p(z)}{q_\Phi(z\|x)} \right] \\\\
-&= E_{q_\Phi(z\|x)}\left[ \log p(x\|z) \right] - E_{q_\Phi(z\|x)}\left[ \log \frac{q_\Phi(z\|x)}{p(z)} \right] \\\\
+E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] &= E_{q_\Phi(z\|x)}\left[ \log \frac{p(x\|z)p(z)}{q_\Phi(z\|x)} \right] \\
+&= E_{q_\Phi(z\|x)}\left[ \log p(x\|z) \right] + E_{q_\Phi(z\|x)}\left[ \log \frac{p(z)}{q_\Phi(z\|x)} \right] \\
+&= E_{q_\Phi(z\|x)}\left[ \log p(x\|z) \right] - E_{q_\Phi(z\|x)}\left[ \log \frac{q_\Phi(z\|x)}{p(z)} \right] \\
 &= - CE(q_\Phi(z\|x) \|\| p(x\|z)) - D_{KL}(q_\Phi(z\|x) \|\| p(z))
 \end{align}
 $$
@@ -211,7 +211,7 @@ where $\odot$ is element-wise product. Now input $x$ can determine distribution 
 Generation process:
 
 $$\begin{align}
-z_{gen} &\sim p(z), \\\\
+z_{gen} &\sim p(z), \\
 x_{gen} &\sim p_{\Theta}(z_{gen})
 \end{align}
 $$
@@ -238,7 +238,7 @@ Under Markovian assumption, current status only depend on the very previous stat
 The ELBO is:
 
 $$\begin{align}
-E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] &= E_{q_\Phi(z_{1..T}\|x)}\left[ \log \frac{p(x,z_{1..T})}{q_\Phi(z_{1..T}\|x)} \right] =  E_{q_\Phi(z_{1..T}\|x)}\left[ \log \frac{p(x \| z_{1}) p(z_{1..T})}{q_\Phi(z_{1..T}\|x)} \right] \\\\
+E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] &= E_{q_\Phi(z_{1..T}\|x)}\left[ \log \frac{p(x,z_{1..T})}{q_\Phi(z_{1..T}\|x)} \right] =  E_{q_\Phi(z_{1..T}\|x)}\left[ \log \frac{p(x \| z_{1}) p(z_{1..T})}{q_\Phi(z_{1..T}\|x)} \right] \\
 &= E_{q_\Phi(z_{1..T}\|x)}\left[ \log \frac{p(z_T)  p(x\|z_1) \prod_{i=2}^T p(z_{i-1}\|z_{i})}{q_\Phi(z_1\|x) \prod_{i=2}^T q_\Phi(z_{i}\|z_{i-1})} \right]
 \end{align}$$
 
@@ -253,14 +253,14 @@ VDM is a MHVAE with restrictions:
 #### ELBO objective function
 
 $$\begin{align}
-ELBO=&E_{q(x_{1:T}\|x_0)}\left[ \log \frac{p(x_{0:T})}{q(x_{1:T}\|x_0)} \right] \\\\
-=&E_{q(x_1\|x_0)}[\log p_\theta(x_0\|x_1)] - E_{q(x_{T-1}\|x_0)}[D_{KL}(q(x_T\|x_{T-1}) \\| p(x_T) )] \\\\
-&-\sum_{t=1}^{T-1} E_{q(x_{t-1},x_{t+1}\|x_0)}[D_{KL}(q(x_t\|x_{t-1}) \\| p_\theta(x_t\|x_{t+1}))] \label{eq:term3}
+ELBO=&E_{q(x_{1:T}\|x_0)}\left[ \log \frac{p(x_{0:T})}{q(x_{1:T}\|x_0)} \right] \\
+=&E_{q(x_1\|x_0)}[\log p_\theta(x_0\|x_1)] - E_{q(x_{T-1}\|x_0)}[D_{KL}(q(x_T\|x_{T-1}) \| p(x_T) )] \\
+&-\sum_{t=1}^{T-1} E_{q(x_{t-1},x_{t+1}\|x_0)}[D_{KL}(q(x_t\|x_{t-1}) \| p_\theta(x_t\|x_{t+1}))] \label{eq:term3}
 \end{align}$$
 
 1. $E_{q(x_1\|x_0)}[\log p_\theta(x_0\|x_1)]$ reconstruction term, also a consistentcy term asking the first noising step to be reversable.
-1. $-E_{q(x_{T-1}\|x_0)}[D_{KL}(q(x_T\|x_{T-1}) \\| p(x_T) )]$ prior matching term, it asks the last noising step to be random enough such that the generated $x_T$ is $\mathcal{N}(0,1)$ which is $p(x_T)$.
-1. $-\sum_{t=1}^{T-1} E_{q(x_{t-1},x_{t+1}\|x_0)}[D_{KL}(q(x_t\|x_{t-1}) \\| p_\theta(x_t\|x_{t+1}))]$ consistency term, asking the forward and backward generation of any $x_t$ be consistent.
+1. $-E_{q(x_{T-1}\|x_0)}[D_{KL}(q(x_T\|x_{T-1}) \| p(x_T) )]$ prior matching term, it asks the last noising step to be random enough such that the generated $x_T$ is $\mathcal{N}(0,1)$ which is $p(x_T)$.
+1. $-\sum_{t=1}^{T-1} E_{q(x_{t-1},x_{t+1}\|x_0)}[D_{KL}(q(x_t\|x_{t-1}) \| p_\theta(x_t\|x_{t+1}))]$ consistency term, asking the forward and backward generation of any $x_t$ be consistent.
 
 In term 3, expectation is computed over two variables $x_{t-1},x_{t+1}$. It is suggested in [^7] that using one variable at a time is better in reducing ELBO variance and thus is easier to optimize. But euqation-53 has a mistake. And we do not agree with his deduction.
 
@@ -270,7 +270,7 @@ In term 3, expectation is computed over two variables $x_{t-1},x_{t+1}$. It is s
 
 In VDM, noising process is defined as a Gaussian linear model[^8], which is a linear combination of multiple gaussian noises and original input image as a residual $\epsilon$. In VDM described by [^7], noising process is specifically defined as:
 $$\begin{align}
-q(x_t\| x_{t-1}) &= \mathcal{N}(x_t; \sqrt{\alpha_t}x_{t-1},(1-\alpha_t)\mathrm{I}) \label{eq:markov_xt_dist} \\\\
+q(x_t\| x_{t-1}) &= \mathcal{N}(x_t; \sqrt{\alpha_t}x_{t-1},(1-\alpha_t)\mathrm{I}) \label{eq:markov_xt_dist} \\
 x_t &= \sqrt{\alpha_t} x_{t-1} + \sqrt{1-\alpha_t} \epsilon \label{eq:markov_xt_linear}
 \end{align}$$
 
@@ -278,12 +278,12 @@ $x_t$ can be expanded and source back to $x_0$. By merging variances of independ
 
 $$
 \begin{align}
-x_t &= \sqrt{\alpha_t} x_{t-1} + \sqrt{1-\alpha_t} \epsilon_{t-1}^{\ast} \\\\
-&= \sqrt{\alpha_t} \left( \sqrt{a_{t-1}} x_{t-2}  + \sqrt{1-\alpha_{t-1}} \epsilon_{t-2}^{\ast} \right) + \sqrt{1 - \alpha_t}  \epsilon_{t-1}^{\ast} \\\\
-&= \sqrt{\alpha_t \alpha_{t-1}} x_{t-2} + \sqrt{1- \alpha_t \alpha_{t-1}} \epsilon_{2}\\\\
-&= ... \\\\
-&= \sqrt{\prod_{i=1}^{t}\alpha_i }x_0 + \sqrt{1- \prod_{i=1}^{t}\alpha_i }\epsilon_t \\\\
-&=\sqrt{\bar{\alpha}_t} x_0 + \sqrt{1-\bar{\alpha}_t} \epsilon_t \label{eq:noise_process}\\\\
+x_t &= \sqrt{\alpha_t} x_{t-1} + \sqrt{1-\alpha_t} \epsilon_{t-1}^{\ast} \\
+&= \sqrt{\alpha_t} \left( \sqrt{a_{t-1}} x_{t-2}  + \sqrt{1-\alpha_{t-1}} \epsilon_{t-2}^{\ast} \right) + \sqrt{1 - \alpha_t}  \epsilon_{t-1}^{\ast} \\
+&= \sqrt{\alpha_t \alpha_{t-1}} x_{t-2} + \sqrt{1- \alpha_t \alpha_{t-1}} \epsilon_{2}\\
+&= ... \\
+&= \sqrt{\prod_{i=1}^{t}\alpha_i }x_0 + \sqrt{1- \prod_{i=1}^{t}\alpha_i }\epsilon_t \\
+&=\sqrt{\bar{\alpha}_t} x_0 + \sqrt{1-\bar{\alpha}_t} \epsilon_t \label{eq:noise_process}\\
 &\sim \mathcal{N}(x_t; \sqrt{\bar{\alpha}_t} x_0,(1-\bar{\alpha}_t)\mathrm{I} ) \label{eq:xt_on_x0_dist}
 \end{align} 
 $$
@@ -293,7 +293,7 @@ in which $\epsilon_t$ is the summation of $t$ independent gaussians $\epsilon^\a
 According to paper[^7] Eq. 58, encode-decode consistency term(Eq. \ref{eq:term3} term-3) can become:
 $$
 \begin{equation}
--E_{q(x_t\|x_0)} [D_{KL}(q(x_{t-1}\|x_t,x_0) \\| p_\theta(x_{t-1}\|x_t))]
+-E_{q(x_t\|x_0)} [D_{KL}(q(x_{t-1}\|x_t,x_0) \| p_\theta(x_{t-1}\|x_t))]
 \end{equation}
 $$
 
@@ -303,24 +303,24 @@ This form is derived in paper[^7] using a proabably problematic cancellation(Eq.
 To analyze the decoding posterior $q(x_{t-1}\|x_t)$ , a dummy $x_0$ condition can be added: $q(x_{t-1}\|x_t,x_0)$. Although VDM is Markov HVAE, adding the original image $x_0$ can gain insight of the connection with $x_0$ . 
 
 $$\begin{align}
-q(x_{t-1}\|x_t,x_0) &= \frac{q(x_t\|x_{t-1},x_0)q(x_{t-1}\|x_0)}{q(x_t\|x_0)} \\\\
+q(x_{t-1}\|x_t,x_0) &= \frac{q(x_t\|x_{t-1},x_0)q(x_{t-1}\|x_0)}{q(x_t\|x_0)} \\
 &\propto \mathcal{N}(x_{t-1};\frac{\sqrt{\alpha_t}(1-\bar{\alpha}\_{t-1})x_t + \sqrt{\bar{\alpha}\_{t-1}}(1-\alpha_t)x_0 }{1-\bar{\alpha}\_t},\frac{(1-\alpha_t)(1-\bar{\alpha}\_{t-1})}{1-\bar{\alpha}\_t}\mathrm{I}) \label{eq:posterior_param}
 \end{align}
 $$
 
-To maximize ELBO, $D_{KL}(q\\|p_{\theta})$ is to be minimzed.
+To maximize ELBO, $D_{KL}(q\|p_{\theta})$ is to be minimzed.
 
 $$\begin{align}
-&\arg_{\theta} \min D_{KL}(q(x_{t-1}\|x_{t},x_0) \\| p_{\theta}(x_{t-1}\|x_t) ) \\\\
-=& \arg_{\theta} \min \frac{1}{2\sigma^2(t)} \\| \mu_\theta - \mu_q \\|^2_2
+&\arg_{\theta} \min D_{KL}(q(x_{t-1}\|x_{t},x_0) \| p_{\theta}(x_{t-1}\|x_t) ) \\
+=& \arg_{\theta} \min \frac{1}{2\sigma^2(t)} \| \mu_\theta - \mu_q \|^2_2
 \end{align}
 $$
 
 According to Eq. \ref{eq:posterior_param}, the most likely $x_{t-1}$ is a linear combination of noisy $x_t$ and image $x_0$. By creating a network $\hat{x}\_\theta(x_t,t) \sim x_0$ to estimate $x_0$, one can interpolate and obtain $x_{t-1}$
 
 $$\begin{align}
-&\arg_{\theta} \min D_{KL}(q(x_{t-1}\|x_{t},x_0) \\| p_{\theta}(x_{t-1}\|x_t) ) \\\\
-=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \\| \hat{x}\_\theta(x_t,t) - x_0 \\|^2_2 \label{eq:objective_l2}
+&\arg_{\theta} \min D_{KL}(q(x_{t-1}\|x_{t},x_0) \| p_{\theta}(x_{t-1}\|x_t) ) \\
+=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \| \hat{x}\_\theta(x_t,t) - x_0 \|^2_2 \label{eq:objective_l2}
 \end{align}
 $$
 
@@ -333,9 +333,9 @@ The problem is now to train a $\hat{x}$ to approxmate $x_0$. Optimizing a VDM bo
 From Eq. \ref{eq:posterior_param} the variance $\sigma_q^2$ for decoding process $p(x_{t-1}\|x_t,x_0)$ is $\frac{(1-\alpha_t)(1-\bar{\alpha}\_{t-1})}{1-\bar{\alpha}}\_t$. Using this variance to replace $\sigma_q^2$ in MSE objective defined by Eq. \ref{eq:objective_l2}, the objective is updated as:
 
 $$\begin{align}
-&\arg_{\theta} \min D_{KL}(q(x_{t-1}\|x_{t},x_0) \\| p_{\theta}(x_{t-1}\|x_t) ) \\\\
-=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \\| \hat{x}\_\theta(x_t,t) - x_0 \\|^2_2 \label{eq:objective_l2_raw}\\\\
-=& \arg_{\theta} \min \frac{1}{2 \frac{(1-\alpha_t)(1-\bar{\alpha}\_{t-1})}{1-\bar{\alpha}\_t}} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \\| \hat{x}\_\theta(x_t,t) - x_0 \\|^2_2 \label{eq:objective_l2_var}
+&\arg_{\theta} \min D_{KL}(q(x_{t-1}\|x_{t},x_0) \| p_{\theta}(x_{t-1}\|x_t) ) \\
+=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \| \hat{x}\_\theta(x_t,t) - x_0 \|^2_2 \label{eq:objective_l2_raw}\\
+=& \arg_{\theta} \min \frac{1}{2 \frac{(1-\alpha_t)(1-\bar{\alpha}\_{t-1})}{1-\bar{\alpha}\_t}} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \| \hat{x}\_\theta(x_t,t) - x_0 \|^2_2 \label{eq:objective_l2_var}
 \end{align}
 $$
 
@@ -344,8 +344,8 @@ It is possible to use `SNR` concept to replace those $\alpha$, since $SNR(\mathc
 Recall the incremental noising process (Eq. \ref{eq:markov_xt_dist},\ref{eq:markov_xt_linear}) and chained noising formular (Eq. \ref{eq:xt_on_x0_dist}):
 $$
 \begin{align}
-x_t &= \sqrt{\alpha_t} x_{t-1} + \sqrt{1-\alpha_t} \epsilon \\\\
-q(x_t\|x_{t-1}) &= \mathcal{N}(x_t;\sqrt{\alpha_t} x_{t-1};(1-\alpha_t)\mathrm{I})\\\\
+x_t &= \sqrt{\alpha_t} x_{t-1} + \sqrt{1-\alpha_t} \epsilon \\
+q(x_t\|x_{t-1}) &= \mathcal{N}(x_t;\sqrt{\alpha_t} x_{t-1};(1-\alpha_t)\mathrm{I})\\
 q(x_t\|x_0) &= \mathcal{N}(x_t;\sqrt{\bar{\alpha}\_{t}}x_0,(1-\bar{\alpha}\_t)\mathrm{I})
 \end{align}
 $$
@@ -360,12 +360,12 @@ $$
 
 The variance-based MSE objective in Eq. \ref{eq:objective_l2_var} become:
 $$\begin{align}
-&\arg_{\theta} \min D_{KL}(q(x_{t-1}\|x_{t},x_0) \\| p_{\theta}(x_{t-1}\|x_t) ) \\\\
-=& \arg_{\theta} \min  \frac{1}{2}\left(  \frac{\bar{\alpha}\_{t-1}}{1-\bar{\alpha}\_{t-1}} - \frac{\bar{\alpha}\_t}{1-\bar{\alpha}\_t} \right) \\| \hat{x}\_\theta(x_t,t) - x_0 \\|^2_2 \\\\
-=& \frac{1}{2}(SNR(t-1) - SNR(t))  \\| \hat{x}\_\theta(x_t,t) - x_0 \\|^2_2 \label{eq:objective_l2_snr}
+&\arg_{\theta} \min D_{KL}(q(x_{t-1}\|x_{t},x_0) \| p_{\theta}(x_{t-1}\|x_t) ) \\
+=& \arg_{\theta} \min  \frac{1}{2}\left(  \frac{\bar{\alpha}\_{t-1}}{1-\bar{\alpha}\_{t-1}} - \frac{\bar{\alpha}\_t}{1-\bar{\alpha}\_t} \right) \| \hat{x}\_\theta(x_t,t) - x_0 \|^2_2 \\
+=& \frac{1}{2}(SNR(t-1) - SNR(t))  \| \hat{x}\_\theta(x_t,t) - x_0 \|^2_2 \label{eq:objective_l2_snr}
 \end{align}$$
 
-SNR concept introduced here helps us obtain $\alpha$ so as to generate $x_t$ directly from $\sqrt{\bar{\alpha}\_{t}} x_0 + \epsilon_t$ and optmize RMSE loss $...\\|\hat{x}\_\theta(x_t,t) -x_0 \\|^2\_2$. One can choose a series of SNRs and obtain corresponding $\bar{\alpha}\_t$. A convenient way to define a descending SNR sequence is using a monotonically increasing neural network $\omega_\eta$:
+SNR concept introduced here helps us obtain $\alpha$ so as to generate $x_t$ directly from $\sqrt{\bar{\alpha}\_{t}} x_0 + \epsilon_t$ and optmize RMSE loss $...\|\hat{x}\_\theta(x_t,t) -x_0 \|^2\_2$. One can choose a series of SNRs and obtain corresponding $\bar{\alpha}\_t$. A convenient way to define a descending SNR sequence is using a monotonically increasing neural network $\omega_\eta$:
 
 $$\begin{equation}
 SNR(t) = \exp(-\omega_\eta(t))
@@ -373,8 +373,8 @@ SNR(t) = \exp(-\omega_\eta(t))
 
 $\exp$ is useful to get a $\bar{\alpha}$ as sigmoid activated logits of network $\omega_\eta$
 $$\begin{align}
-SNR &=\frac{\bar{\alpha}\_t}{1-\bar{\alpha}\_t} = \exp(-\omega_\eta(t)) \\\\
-\therefore \bar{\alpha}\_t & = \mathrm{sigmoid}(-\omega_\eta(t)) \\\\
+SNR &=\frac{\bar{\alpha}\_t}{1-\bar{\alpha}\_t} = \exp(-\omega_\eta(t)) \\
+\therefore \bar{\alpha}\_t & = \mathrm{sigmoid}(-\omega_\eta(t)) \\
 \therefore 1-\bar{\alpha}\_t & = \mathrm{sigmoid}(\omega_\eta(t))
 \end{align}$$
 
@@ -389,11 +389,11 @@ x_0 = \frac{x_t - \sqrt{1-\bar{\alpha}\_t} \hat{\epsilon}\_{t}}{\sqrt{\bar{\alph
 The RMSE loss in Eq. \ref{eq:objective_l2_raw} can be:
 
 $$\begin{align}
-&\arg_{\theta} \min D_{KL}(q(x_{t-1}\|x_{t},x_0) \\| p_{\theta}(x_{t-1}\|x_t) ) \\\\
-=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \\| \frac{x_t - \sqrt{1-\bar{\alpha}\_t} \hat{\epsilon}\_{t}}{\sqrt{\bar{\alpha}\_t}} - x_0 \\|^2_2 \\\\
-=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \\| \sqrt{\frac{1-\bar{\alpha}\_t}{\bar{\alpha}\_t}}(\epsilon_t - \hat{\epsilon}\_{t} ) \\|^2_2 \\\\
-=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \frac{1-\bar{\alpha}\_t}{\bar{\alpha}\_t} \\| \epsilon_t - \hat{\epsilon}\_{t}(x_t,t) \\|^2_2 \\\\
-=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)\alpha_t} \\| \epsilon_t - \hat{\epsilon}\_{t}(x_t,t) \\|^2_2 \label{eq:objective_l2_noise}\\\\
+&\arg_{\theta} \min D_{KL}(q(x_{t-1}\|x_{t},x_0) \| p_{\theta}(x_{t-1}\|x_t) ) \\
+=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \| \frac{x_t - \sqrt{1-\bar{\alpha}\_t} \hat{\epsilon}\_{t}}{\sqrt{\bar{\alpha}\_t}} - x_0 \|^2_2 \\
+=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \| \sqrt{\frac{1-\bar{\alpha}\_t}{\bar{\alpha}\_t}}(\epsilon_t - \hat{\epsilon}\_{t} ) \|^2_2 \\
+=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{\bar{\alpha}\_{t-1}(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)^2} \frac{1-\bar{\alpha}\_t}{\bar{\alpha}\_t} \| \epsilon_t - \hat{\epsilon}\_{t}(x_t,t) \|^2_2 \\
+=& \arg_{\theta} \min \frac{1}{2\sigma_{q}^2(t)} \frac{(1-\alpha_t)^2}{(1-\bar{\alpha}\_t)\alpha_t} \| \epsilon_t - \hat{\epsilon}\_{t}(x_t,t) \|^2_2 \label{eq:objective_l2_noise}
 \end{align}
 $$
 
@@ -491,16 +491,16 @@ A: The generator of a series of SNR or $\bar{\alpha}\_t$
 For ELBO term, if we use bayes chain rule on $p(x,z)$:
 $$
 \begin{align}
-E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] &= E_{q_\Phi(z\|x)}\left[ \log \frac{p(z\|x)p(x)}{q_\Phi(z\|x)} \right] \\\\
-&= E_{q_\Phi(z\|x)}\left[ \log p(z\|x) \right] + E_{q_\Phi(z\|x)}\left[ \log \frac{p(x)}{q_\Phi(z\|x)} \right] \\\\
-&= E_{q_\Phi(z\|x)}\left[ \log p(z\|x) \right] - E_{q_\Phi(z\|x)}\left[ \log \frac{q_\Phi(z\|x)}{p(x)} \right] \\\\
+E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] &= E_{q_\Phi(z\|x)}\left[ \log \frac{p(z\|x)p(x)}{q_\Phi(z\|x)} \right] \\
+&= E_{q_\Phi(z\|x)}\left[ \log p(z\|x) \right] + E_{q_\Phi(z\|x)}\left[ \log \frac{p(x)}{q_\Phi(z\|x)} \right] \\
+&= E_{q_\Phi(z\|x)}\left[ \log p(z\|x) \right] - E_{q_\Phi(z\|x)}\left[ \log \frac{q_\Phi(z\|x)}{p(x)} \right] \\
 \end{align}
 $$
 For any give $x$, $p(x)$ is a constant. Hence there is:
 $$
 \begin{align}
-E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] &= E_{q_\Phi(z\|x)}\left[ \log p(z\|x) \right] - E_{q_\Phi(z\|x)}\left[ \log \frac{q_\Phi(z\|x)}{p(x)} \right] \\\\
-&= E_{q_\Phi(z\|x)}\left[ \log p(z\|x) \right] - E_{q_\Phi(z\|x)}\left[ \log q_\Phi(z\|x) \right] +  \log p(x)\\\\
+E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] &= E_{q_\Phi(z\|x)}\left[ \log p(z\|x) \right] - E_{q_\Phi(z\|x)}\left[ \log \frac{q_\Phi(z\|x)}{p(x)} \right] \\
+&= E_{q_\Phi(z\|x)}\left[ \log p(z\|x) \right] - E_{q_\Phi(z\|x)}\left[ \log q_\Phi(z\|x) \right] +  \log p(x)\\
 &= CE(q_\Phi(z\|x) \|\| p(z\|x)) - H(q_\Phi(z\|x)) + \log p(x)
 \end{align}
 $$
