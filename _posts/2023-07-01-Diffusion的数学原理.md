@@ -365,7 +365,7 @@ $$\begin{align}
 =& \frac{1}{2}(SNR(t-1) - SNR(t))  \\| \hat{x}\_\theta(x_t,t) - x_0 \\|^2_2 \label{eq:objective_l2_snr}
 \end{align}$$
 
-SNR concept introduced here helps us obtain $\alpha$ so as to generate $x_t$ directly from $\sqrt{\bar{\alpha}\_{t}} x_0 + \epsilon_t$ and optmize RMSE loss $...\\|\hat{x}\_\theta(x_t,t) -x_0 \\|^2_2$. One can choose a series of SNRs and obtain corresponding $\bar{\alpha}\_t$. A convenient way to define a descending SNR sequence is using a monotonically increasing neural network $\omega_\eta$:
+SNR concept introduced here helps us obtain $\alpha$ so as to generate $x_t$ directly from $\sqrt{\bar{\alpha}\_{t}} x_0 + \epsilon_t$ and optmize RMSE loss $...\\|\hat{x}\_\theta(x_t,t) -x_0 \\|^2\_2$. One can choose a series of SNRs and obtain corresponding $\bar{\alpha}\_t$. A convenient way to define a descending SNR sequence is using a monotonically increasing neural network $\omega_\eta$:
 
 $$\begin{equation}
 SNR(t) = \exp(-\omega_\eta(t))
