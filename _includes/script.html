@@ -1,7 +1,7 @@
 <script>window.blog={baseUrl:""}</script>
 <!-- 防止缓存，编译后链接更新 -->
 {% for js in pageJS %}
-<script type="text/javascript" src="{{site.baseUrl}}/static/js/{{ js }}?t={{ site.time | date: "%Y%m%d%H%M%S" }}"></script>
+<script type="text/javascript" src='{{site.baseUrl}}/static/js/{{ js }}?t={{ site.time | date: "%Y%m%d%H%M%S" }}'></script>
 {% endfor %}
 <!-- MTA腾讯移动分析 -->
 <!--
@@ -34,28 +34,3 @@
   })();
 </script>
 -->
-
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [             // start/end delimiter pairs for display math
-      ['$$', '$$'],
-      ['\\[', '\\]']
-    ],
-    processEscapes: true,
-    processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-    processRefs: true,         // process \ref{...} outside of math mode
-    digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
-    tags: 'all',              // or 'ams' or 'all'
-    maxMacros: 10000,          // maximum number of macro substitutions per expression
-    formatError:               // function called when TeX syntax errors occur
-        (jax, err) => jax.formatError(err)
-  },
-
-  loader: {
-    load: ['input/asciimath', ]
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
