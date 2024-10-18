@@ -504,8 +504,16 @@ E_{q_\Phi(z\|x)}\left[ \log \frac{p(x,z)}{q_\Phi(z\|x)} \right] &= E_{q_\Phi(z\|
 &= CE(q_\Phi(z\|x) \|\| p(z\|x)) - H(q_\Phi(z\|x)) + \log p(x)
 \end{align}
 $$
-#### MathJax Bugs
-One must use subscription before superscription to get correct rendering `xxx_{xxx}^{xxx}`. A reversed sub/superscription caused the parser to fail. This is because a underscore `_` is parsed as italic or emphasis by markdown compiler, when leading by non alphabetic characters.
+
+#### Markdown caused MathJax Bugs
+
+1. One must use subscription before superscription to get correct rendering `xxx_{xxx}^{xxx}`. A reversed sub/superscription caused the parser to fail. This is because a underscore `_` is parsed as italic or emphasis by markdown compiler, when leading by non alphabetic characters.
+1. `Cloudflare CDN` for mathjax is working fine while `jsdeliver` will not.
+
+#### Github-page requirements on Markdown
+
+1. underscore `_` may often be misrecognized as emphasis and requires a leading backslash `\` to work as subscription.
+1. backslash`\` is rendered as-is without escaping. You should replace `\\` by a single `\` before uploading MathJax to github-page. 
 
 # Reference
 [^1]: [Mathjax CDN](https://cdnjs.com/libraries/mathjax/2.7.9)
